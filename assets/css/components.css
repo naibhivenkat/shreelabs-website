@@ -1,0 +1,257 @@
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-primary {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.85rem 1.75rem;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--primary-color);
+
+    color: var(--text-white);
+
+    font-weight: var(--fw-semibold);
+
+    transition: var(--transition-normal);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.85rem 1.75rem;
+
+    border-radius: var(--radius-pill);
+
+    border: 2px solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    font-weight: var(--fw-semibold);
+
+    transition: var(--transition-normal);
+}
+
+.btn-secondary:hover {
+
+    background: var(--primary-color);
+
+    color: var(--text-white);
+}
+
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-title {
+
+    font-size: var(--fs-h2);
+
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.section-subtitle {
+
+    max-width: 720px;
+
+    margin: 0 auto 3rem;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: var(--fs-large);
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-lg);
+
+    padding: 2rem;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+.product-card {
+
+    text-align: left;
+}
+
+.product-card h3 {
+
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+}
+
+.product-card p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+.feature-card {
+
+    text-align: center;
+}
+
+.feature-icon {
+
+    width: 70px;
+    height: 70px;
+
+    margin: auto auto 1.5rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-light);
+
+    font-size: 1.8rem;
+}
+
+.feature-card h3 {
+
+    margin-bottom: .8rem;
+}
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge {
+
+    display: inline-block;
+
+    padding: .45rem 1rem;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--primary-light);
+
+    color: var(--primary-color);
+
+    font-size: .9rem;
+
+    font-weight: var(--fw-semibold);
+}
+
+
+/* ==========================================
+   CTA BOX
+========================================== */
+
+.cta-box {
+
+    padding: 3rem;
+
+    border-radius: var(--radius-xl);
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--accent-color)
+    );
+
+    color: var(--text-white);
+
+    text-align: center;
+}
+
+.cta-box h2 {
+
+    color: var(--text-white);
+
+    margin-bottom: 1rem;
+}
+
+.cta-box p {
+
+    color: rgba(255,255,255,.85);
+
+    margin-bottom: 2rem;
+}
+
+
+/* ==========================================
+   SIMPLE GRID
+========================================== */
+
+.grid {
+
+    display: grid;
+
+    gap: 2rem;
+}
+
+.grid-2 {
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-3 {
+
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-4 {
+
+    grid-template-columns: repeat(4,1fr);
+}

@@ -1,0 +1,190 @@
+/* ==========================================
+   LAYOUT
+   ========================================== */
+
+/* ------------------------------
+   Container
+------------------------------ */
+
+.container {
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+.header {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border-light);
+
+    z-index: 1000;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+.navbar {
+
+    height: var(--header-height);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* ------------------------------
+   Logo
+------------------------------ */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .75rem;
+}
+
+
+.logo-text {
+
+    font-family: var(--font-heading);
+
+    font-size: 1.6rem;
+
+    font-weight: var(--fw-extra-bold);
+
+    color: var(--primary-color);
+
+    letter-spacing: -.5px;
+}
+
+
+/* ------------------------------
+   Navigation Links
+------------------------------ */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+}
+
+
+.nav-links a {
+
+    color: var(--text-primary);
+
+    font-weight: var(--fw-medium);
+
+    transition: var(--transition-fast);
+}
+
+
+.nav-links a:hover {
+
+    color: var(--primary-color);
+}
+
+
+/* ------------------------------
+   Hero
+------------------------------ */
+
+.hero {
+
+    min-height: calc(100vh - var(--header-height));
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.hero .container {
+
+    max-width: 850px;
+}
+
+
+.hero h1 {
+
+    font-size: var(--fs-hero);
+
+    margin-bottom: 1.5rem;
+}
+
+
+.hero p {
+
+    font-size: var(--fs-large);
+
+    color: var(--text-secondary);
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ------------------------------
+   Generic Section
+------------------------------ */
+
+.section {
+
+    text-align: center;
+}
+
+
+.section h2 {
+
+    font-size: var(--fs-h2);
+
+    margin-bottom: 1rem;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+.footer {
+
+    background: var(--text-primary);
+
+    color: var(--text-white);
+
+    padding: 2rem 0;
+
+    text-align: center;
+}
+
+
+.footer p {
+
+    color: rgba(255, 255, 255, .8);
+}

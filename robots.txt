@@ -1,0 +1,9 @@
+# ==========================================
+# ShreeLabs Robots File
+# ==========================================
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://shreelabs.in/sitemap.xml

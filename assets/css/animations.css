@@ -1,0 +1,313 @@
+/* ==========================================
+   GLOBAL TRANSITIONS
+========================================== */
+
+* {
+
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+
+}
+
+
+/* ==========================================
+   FADE IN
+========================================== */
+
+.fade-in {
+
+    animation: fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+.float {
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+.btn-primary:hover,
+.btn-secondary:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.card,
+.workflow-card,
+.screenshot-card,
+.contact-card {
+
+    transition: all .35s ease;
+}
+
+.card:hover,
+.workflow-card:hover,
+.screenshot-card:hover,
+.contact-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+
+/* ==========================================
+   IMAGE HOVER
+========================================== */
+
+.hero-image-placeholder {
+
+    transition: transform .4s ease;
+}
+
+.hero-image-placeholder:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+}
+
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.nav-links a {
+
+    position: relative;
+}
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transition: width .3s ease;
+
+}
+
+.nav-links a:hover::after {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge {
+
+    transition: .3s;
+}
+
+.badge:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-buttons a {
+
+    transition: .35s ease;
+}
+
+.hero-buttons a:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* ==========================================
+   SCROLL REVEAL
+========================================== */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition:
+
+        opacity .8s ease,
+
+        transform .8s ease;
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   HERO BACKGROUND GLOW
+========================================== */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+
+            rgba(37,99,235,.12),
+
+            transparent 70%
+
+        );
+
+    top: -120px;
+
+    right: -120px;
+
+    z-index: 0;
+}
+
+.hero {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* ==========================================
+   STAT CARD
+========================================== */
+
+.stat-card {
+
+    transition: .35s ease;
+}
+
+.stat-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+/* ==========================================
+   FOOTER LINKS
+========================================== */
+
+.footer a {
+
+    transition: .3s;
+}
+
+.footer a:hover {
+
+    padding-left: 6px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 4px rgba(37,99,235,.1);
+
+}

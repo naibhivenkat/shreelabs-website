@@ -1,0 +1,134 @@
+/* ==========================================
+   CSS RESET
+   ========================================== */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Body */
+body {
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-normal);
+    line-height: 1.6;
+
+    color: var(--text-primary);
+    background: var(--background-color);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Images */
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+/* Videos */
+video {
+    max-width: 100%;
+    display: block;
+}
+
+/* SVG */
+svg {
+    display: block;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Buttons */
+button {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+/* Paragraphs */
+p {
+    color: var(--text-secondary);
+}
+
+/* Section spacing */
+section {
+    padding: var(--space-4xl) 0;
+}
+
+/* Focus accessibility */
+:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* Selection */
+::selection {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
