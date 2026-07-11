@@ -1,9 +1,9 @@
 # ==========================================
-# ShreeLabs Robots File
+# ALL Local Robots File
 # ==========================================
 
 User-agent: *
 
 Allow: /
 
-Sitemap: https://shreelabs.in/sitemap.xml
+Sitemap: https://alllocal.in/sitemap.xml

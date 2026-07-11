@@ -1,6 +1,6 @@
 /*
 ==========================================
-SHREELABS WEBSITE
+All Local WEBSITE
 Main JavaScript
 ==========================================
 */

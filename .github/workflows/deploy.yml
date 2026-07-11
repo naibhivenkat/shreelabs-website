@@ -1,4 +1,4 @@
-name: Deploy ShreeLabs Website
+name: Deploy ALl Local Website
 
 on:
   push:
@@ -36,6 +36,6 @@ jobs:
         with:
           path: .
 
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
